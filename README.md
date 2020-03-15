@@ -5,7 +5,7 @@
 **预备工作：**</br>1.下载django3.0.可以通过`pip install django -3.0`</br>2.下载MySQL </br>需要注意的是：django3.0与mysql8.0不兼容，解决方法见[链接](https://www.cnblogs.com/gaoshiguo/p/12272980.html)</br>
 #第一节：django热身#</br>
 首先，打开pycharm,新建一个django工程</br>
-![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/1.png?raw=true)
+![](https://img2020.cnblogs.com/blog/1775941/202003/1775941-20200315185131605-449260947.png)
 
 
 
