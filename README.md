@@ -13,6 +13,19 @@
 ![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/4.png)</br>
 然后在浏览器中输入`127.o.o.1:8000`，就可以看到如下页面：
 ![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/5.png)</br>
-
+**配置django的MySQL数据库：**
+首先创建一个数据库，然后配置`setings.py`文件中的数据库
+我们只需要更改`setings.py`文件中的`datebase`部分，
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',#这里将django.db.backends.sqlite该为MySQL
+        'NAME': 'myblog',#这里填创建的数据库名称
+        'USER':'root',#这里填MySQL数据库的user
+        'PASSWORD':'123456',#这里填MySQL数据库的密码
+        'HOST':'127.0.0.1',#这里填本机地址
+        'PORT':'3306',#这里填数据库的端口号
+    }
+ ```
 
 
