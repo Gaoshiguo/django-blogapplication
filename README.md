@@ -46,5 +46,18 @@ INSTALLED_APPS = [
 ![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/7.png)</br>
 运行完这个命令后就可以看到自动的生成了一个文件夹user
 ![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/8.png)</br>
-
-
+2.通过pycharm创建，在pycahrm 的tool工具栏里有一个`Run manage.py Task`与1是同样的功效
+创建完user app 后需要在需要在`setings.py`文件安装这个app，也就是在
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'user'#加上刚刚创建的userapp
+]
+```
+准备工作做好之后，我们来通过ORM创建一张数据库用户表，django已经自动的为我们创建了models.py文件
+![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/9.png)</br>
