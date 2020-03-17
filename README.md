@@ -27,5 +27,24 @@ DATABASES = {
         'PORT':'3306',#这里填数据库的端口号
     }
  ```
+**小试牛刀**</br>
+首先开始写一个user模块，该模块的主要功能是实现用户的登录和注册，上一节已经介绍了如何配置数据库。</br>
+开始用户模块之前，我们需要创建一个app,并且需要在`setings.py`文件的
+```
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+```
+部分添加这个新建的app，</br>在django中创建app的方式由两种：1，通过cmd终端创建2.通过pycharm创建</br>
+1.通过cmd终端创建app
+首先cmd 进入项目所在目录，然后运行命令：`python manage.py startapp user`
+![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/7.png)</br>
+运行完这个命令后就可以看到自动的生成了一个文件夹user
+![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/8.png)</br>
 
 
