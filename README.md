@@ -77,3 +77,9 @@ class user(models.Model):#创建user数据表，表中三个字段：id,username
  ![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/11.png)</br>
  执行迁移脚本文件后会发现我们创建的数据库中会多出来一张表：</br>
 ![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/12.png)</br> 
+**搭建前台页面**</br>
+我们在myblog目录下的templates文件夹中创建我们的前端html页面。需要注意的是，在django中前端页面的HTML是一个DTL模板，模板之间是可以实现继承。
+因此我们使用bootstrap来进行样式的设计，当然这不是重点。</br>
+我们先写一个父模板，这样子模板可以通过继承来实现与父模板相同的内容，大大减少了代码量：
+父模板文件见链接：
+
