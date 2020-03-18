@@ -61,3 +61,13 @@ INSTALLED_APPS = [
 ```
 准备工作做好之后，我们来通过ORM创建一张数据库用户表，django已经自动的为我们创建了models.py文件
 ![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/9.png)</br>
+我们在`models.py`文件中创建数据库表：</br>
+```python
+# Create your models here.
+class user(models.Model):#创建user数据表，表中三个字段：id,username,password
+    id=models.AutoField(primary_key=True)
+    username=models.CharField(max_length=100,null=False)
+    password=models.IntegerField(null=False)
+    class Meta:
+        db_table = 'user'#设置数据表的表名
+ ```
