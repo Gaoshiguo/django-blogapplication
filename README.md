@@ -75,3 +75,5 @@ class user(models.Model):#创建user数据表，表中三个字段：id,username
  然后执行：`python manage.py makemigrations user` 和`python manage.py migrate`
  ![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/10.png)</br>
  ![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/11.png)</br>
+ 执行迁移脚本文件后会发现我们创建的数据库中会多出来一张表：</br>
+![](https://github.com/Gaoshiguo/django-blogapplication/blob/master/%E6%88%AA%E5%9B%BE/12.png)</br> 
